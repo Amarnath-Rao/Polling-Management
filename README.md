@@ -3,6 +3,15 @@ blockvote
 
 This [React] app was initialized with [create-near-app]
 
+Use "yarn build && yarn start" to start the page
+
+Images
+==========
+![Screenshot 2023-04-18 163320](https://user-images.githubusercontent.com/96937608/232758882-1490ccf4-e804-4fb3-81d1-59a99166cc1c.png)
+![Screenshot 2023-04-18 163404](https://user-images.githubusercontent.com/96937608/232758917-15946039-d783-47f1-9aa0-5cd4a4ba7907.png)
+![Screenshot 2023-04-18 163501](https://user-images.githubusercontent.com/96937608/232758933-43aa2981-6e8b-4e3b-b4b1-2a76cd02f6fd.png)
+
+
 
 Quick Start
 ===========
@@ -71,33 +80,3 @@ Step 2: set contract name in code
 Modify the line in `src/config.js` that sets the account name of the contract. Set it to the account id you used above.
 
     const CONTRACT_NAME = process.env.CONTRACT_NAME || 'blockvote.YOUR-NAME.testnet'
-
-
-Step 3: deploy!
----------------
-
-One command:
-
-    yarn deploy
-
-As you can see in `package.json`, this does two things:
-
-1. builds & deploys smart contract to NEAR TestNet
-2. builds & deploys frontend code to GitHub using [gh-pages]. This will only work if the project already has a repository set up on GitHub. Feel free to modify the `deploy` script in `package.json` to deploy elsewhere.
-
-
-Troubleshooting
-===============
-
-On Windows, if you're seeing an error containing `EPERM` it may be related to spaces in your path. Please see [this issue](https://github.com/zkat/npx/issues/209) for more details.
-
-
-  [React]: https://reactjs.org/
-  [create-near-app]: https://github.com/near/create-near-app
-  [Node.js]: https://nodejs.org/en/download/package-manager/
-  [jest]: https://jestjs.io/
-  [NEAR accounts]: https://docs.near.org/docs/concepts/account
-  [NEAR Wallet]: https://wallet.testnet.near.org/
-  [near-cli]: https://github.com/near/near-cli
-  [gh-pages]: https://github.com/tschaub/gh-pages
-# blockvotetutorial2
